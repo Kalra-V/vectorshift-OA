@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Position } from 'reactflow';
-import { BaseNode } from './BaseNode';
+import { BaseNode } from './baseNode';
 
 export const OutputNode = ({ id, data }) => {
   const [currName, setCurrName] = useState(data?.outputName || id.replace('customOutput-', 'output_'));

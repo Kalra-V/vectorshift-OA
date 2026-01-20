@@ -1,7 +1,7 @@
 // inputNode.js
 
 import { useState } from 'react';
-import { BaseNode } from './BaseNode';
+import { BaseNode } from './baseNode';
 import { Position } from 'reactflow';
 
 export const InputNode = ({ id, data }) => {

@@ -12,6 +12,11 @@ import { OutputNode } from './nodes/outputNode';
 import { TextNode } from './nodes/textNode';
 
 import 'reactflow/dist/style.css';
+import { FilterNode } from './nodes/filterNode';
+import { ApiCallNode } from './nodes/apiCallNode';
+import { TransformNode } from './nodes/transformNode';
+import { DelayNode } from './nodes/delayNode';
+import { MergeNode } from './nodes/mergeNode';
 
 const gridSize = 20;
 const proOptions = { hideAttribution: true };
@@ -20,6 +25,11 @@ const nodeTypes = {
   llm: LLMNode,
   customOutput: OutputNode,
   text: TextNode,
+  filter: FilterNode,
+  apiCall: ApiCallNode,
+  transform: TransformNode,
+  delay: DelayNode,
+  merge: MergeNode
 };
 
 const selector = (state) => ({
