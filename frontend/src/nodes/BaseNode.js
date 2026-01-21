@@ -9,6 +9,7 @@ export const BaseNode = ({ title, text, fields, handles, style, variables }) => 
     const nodeStyle = {
         minWidth: 200,
         minHeight: 180,
+        maxHeight: 300,
         background: theme.node.background,
         border: `2px solid ${theme.node.border}`,
         borderRadius: '8px',
