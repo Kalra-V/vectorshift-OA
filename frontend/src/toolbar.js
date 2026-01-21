@@ -1,11 +1,20 @@
 // toolbar.js
 
 import { DraggableNode } from './draggableNode';
+import { theme } from './styles/theme';
 
 export const PipelineToolbar = () => {
+    const toolbarStyle = {
+        padding: '16px',
+        background: 'white',
+        borderBottom: `2px solid ${theme.node.border}`,
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '8px',
+    };
 
     return (
-        <div style={{ padding: '10px' }}>
+        <div style={toolbarStyle}>
             <div style={{ marginTop: '20px', display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
                 <DraggableNode type='customInput' label='Input' />
                 <DraggableNode type='llm' label='LLM' />
